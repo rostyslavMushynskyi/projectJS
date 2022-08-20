@@ -41,3 +41,15 @@ function handleApiRequest(q, units) {
     })
     .catch(function () {});
 }
+
+const switchMode = document.querySelector("#themeButton");
+
+switchMode.onclick = function () {
+  let theme = document.documentElement;
+
+  if (theme.className === "dark") {
+    theme.className = "light";
+  } else {
+    theme.className = "dark";
+  }
+};
